@@ -17,7 +17,7 @@ app.get('/', (_req, res) => {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Check-in Guide — Via Arenula 16</title>
-<link rel="icon" href="building-facade.jpg">
+<link rel="icon" href="building-facade.jpg?v=2">
 <style>
   :root { --brand:#2b2118; --ink:#1f2937; --muted:#6b7280; --bg:#f7f7f7; --card:#ffffff; --line:#e5e7eb; }
   *{box-sizing:border-box}
@@ -32,8 +32,9 @@ app.get('/', (_req, res) => {
   h2{margin:6px 0 8px 0;font-size:18px}
   p{margin:6px 0;line-height:1.45}
   figure{margin:10px 0}
-  img{max-width:50%;height:auto;border-radius:10px;border:1px solid var(--line);display:block}
-  figcaption{font-size:12px;color:var(--muted);margin-top:6px}
+  img{max-width:100%;height:auto;border-radius:10px;border:1px solid var(--line);display:block}
+  figure img{width:90%;margin:0 auto} /* riduzione visiva */
+  figcaption{font-size:12px;color:var(--muted);margin-top:6px;text-align:center}
   .note{background:#fff7ed;border:1px solid #fed7aa;color:#7c2d12;padding:10px;border-radius:8px;margin-top:8px}
   .cta{display:inline-block;margin-top:6px;padding:10px 12px;border-radius:10px;background:var(--brand);color:#fff;text-decoration:none}
   footer{color:var(--muted);text-align:center;font-size:12px;margin:18px 0}
@@ -54,7 +55,7 @@ app.get('/', (_req, res) => {
         <h2>Arriving at the Building</h2>
         <p>When you reach <b>Via Arenula 16</b>, look for the large wooden entrance door with the number <b>16</b> engraved on the stone frame.</p>
         <figure>
-          <img src="building-facade.jpg" alt="Building entrance — Via Arenula 16">
+          <img src="building-facade.jpg?v=2" alt="Building entrance — Via Arenula 16">
           <figcaption>Façade and main entrance — Via Arenula 16.</figcaption>
         </figure>
       </div>
@@ -70,7 +71,7 @@ app.get('/', (_req, res) => {
         <p>Press <b>C8</b> on the intercom panel, <b>then call me</b> at <a class="cta" href="tel:+393355245756">+39 335 524 5756</a>.</p>
         <p>Wait for the door to unlock — you will hear a click.</p>
         <figure>
-          <img src="intercom.jpg" alt="Intercom panel with C8 highlighted">
+          <img src="intercom.jpg?v=2" alt="Intercom panel with C8 highlighted">
           <figcaption>Intercom panel — press C8.</figcaption>
         </figure>
       </div>
@@ -97,7 +98,7 @@ app.get('/', (_req, res) => {
         <p>Walk straight across the corridor into the courtyard, then take the stairs on your <b>right</b> after the elevator.</p>
         <div class="note">The elevator is <b>strictly private</b> — please do not use it.</div>
         <figure>
-          <img src="45DDD98D-EC7E-4664-9205-F0D6D22C1BF4.jpeg" alt="Hallway leading to the courtyard and stairs">
+          <img src="hallway.jpg?v=2" alt="Hallway leading to the courtyard and stairs">
           <figcaption>Go straight to the courtyard, then stairs on the right (after the elevator).</figcaption>
         </figure>
       </div>
@@ -112,7 +113,7 @@ app.get('/', (_req, res) => {
         <h2>Reaching the Apartment</h2>
         <p>Go to the <b>3rd floor</b>. At the end of the stairs, you’ll find the apartment door in front of you.</p>
         <figure>
-          <img src="apartment-door.jpg" alt="Apartment door at the top of the stairs">
+          <img src="apartment-door.jpg?v=2" alt="Apartment door at the top of the stairs">
           <figcaption>Apartment door — 3rd floor, end of the stairs.</figcaption>
         </figure>
       </div>
@@ -128,7 +129,7 @@ app.get('/', (_req, res) => {
         <p>Use the <b>key from the lockbox</b>. After taking the key, <b>close the lockbox and mix the numbers</b>.</p>
         <p>Use the <b>square key</b> and turn clockwise until it clicks. You’re in!</p>
         <figure>
-          <img src="key-safe.jpg" alt="Lockbox with combination wheels">
+          <img src="key-safe.jpg?v=2" alt="Lockbox with combination wheels">
           <figcaption>Lockbox for the key — close it and scramble the code after use.</figcaption>
         </figure>
       </div>
@@ -149,4 +150,6 @@ app.get('/', (_req, res) => {
 });
 
 const port = process.env.PORT || 8787;
-app.listen(port, () => console.log('Check-in guide running on http://localhost:'+port));
+app.listen(port, () =>
+  console.log('Check-in guide running on http://localhost:'+port)
+);
