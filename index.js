@@ -1,4 +1,4 @@
-// Check-in — Via Arenula 16 (static guide)
+ // Check-in — Via Arenula 16 (static guide)
 import express from 'express';
 import cors from 'cors';
 
@@ -31,9 +31,9 @@ app.get('/', (_req, res) => {
   .num{flex:0 0 36px;height:36px;border-radius:50%;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
   h2{margin:6px 0 8px 0;font-size:18px}
   p{margin:6px 0;line-height:1.45}
-  figure{margin:10px 0}
-  img{max-width:100%;height:auto;border-radius:10px;border:1px solid var(--line);display:block}
-  figcaption{font-size:12px;color:var(--muted);margin-top:6px}
+  figure{margin:10px 0;display:flex;flex-direction:column;align-items:center}
+  img{max-width:50%;height:auto;border-radius:10px;border:1px solid var(--line);display:block}
+  figcaption{font-size:12px;color:var(--muted);margin-top:6px;text-align:center}
   .note{background:#fff7ed;border:1px solid #fed7aa;color:#7c2d12;padding:10px;border-radius:8px;margin-top:8px}
   .cta{display:inline-block;margin-top:6px;padding:10px 12px;border-radius:10px;background:var(--brand);color:#fff;text-decoration:none}
   footer{color:var(--muted);text-align:center;font-size:12px;margin:18px 0}
@@ -149,6 +149,4 @@ app.get('/', (_req, res) => {
 });
 
 const port = process.env.PORT || 8787;
-app.listen(port, () =>
-  console.log('Check-in guide running on http://localhost:'+port)
-);
+app.listen(port, () => console.log('Check-in guide running on http://localhost:'+port));
