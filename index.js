@@ -70,7 +70,7 @@ app.get('/', (_req, res) => {
         <p>Press <b>C8</b> on the intercom panel, <b>then call me</b> at <a class="cta" href="tel:+393355245756">+39 335 524 5756</a>.</p>
         <p>Wait for the door to unlock — you will hear a click.</p>
         <figure>
-          <img src="intercom.jpg" alt="Intercom panel with C8 highlighted">
+          <img src="intercom-c8.jpg" alt="Intercom panel with C8 highlighted">
           <figcaption>Intercom panel — press C8.</figcaption>
         </figure>
       </div>
@@ -97,7 +97,7 @@ app.get('/', (_req, res) => {
         <p>Walk straight across the corridor into the courtyard, then take the stairs on your <b>right</b> after the elevator.</p>
         <div class="note">The elevator is <b>strictly private</b> — please do not use it.</div>
         <figure>
-          <img src="hallway.jpg" alt="Hallway leading to the courtyard and stairs">
+          <img src="hallway-courtyard.jpg" alt="Hallway leading to the courtyard and stairs">
           <figcaption>Go straight to the courtyard, then stairs on the right (after the elevator).</figcaption>
         </figure>
       </div>
@@ -149,4 +149,6 @@ app.get('/', (_req, res) => {
 });
 
 const port = process.env.PORT || 8787;
-app.listen(port, () => console.log('Check-in guide running on http://localhost:'+port));
+app.listen(port, () =>
+  console.log('Check-in guide running on http://localhost:'+port)
+);
