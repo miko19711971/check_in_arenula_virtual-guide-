@@ -1,4 +1,4 @@
- // Check-in — Via Arenula 16 (static guide)
+// Check-in — Via Arenula 16 (static guide)
 import express from 'express';
 import cors from 'cors';
 
@@ -31,9 +31,9 @@ app.get('/', (_req, res) => {
   .num{flex:0 0 36px;height:36px;border-radius:50%;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
   h2{margin:6px 0 8px 0;font-size:18px}
   p{margin:6px 0;line-height:1.45}
-  figure{margin:10px 0;display:flex;flex-direction:column;align-items:center}
+  figure{margin:10px 0}
   img{max-width:50%;height:auto;border-radius:10px;border:1px solid var(--line);display:block}
-  figcaption{font-size:12px;color:var(--muted);margin-top:6px;text-align:center}
+  figcaption{font-size:12px;color:var(--muted);margin-top:6px}
   .note{background:#fff7ed;border:1px solid #fed7aa;color:#7c2d12;padding:10px;border-radius:8px;margin-top:8px}
   .cta{display:inline-block;margin-top:6px;padding:10px 12px;border-radius:10px;background:var(--brand);color:#fff;text-decoration:none}
   footer{color:var(--muted);text-align:center;font-size:12px;margin:18px 0}
@@ -70,7 +70,7 @@ app.get('/', (_req, res) => {
         <p>Press <b>C8</b> on the intercom panel, <b>then call me</b> at <a class="cta" href="tel:+393355245756">+39 335 524 5756</a>.</p>
         <p>Wait for the door to unlock — you will hear a click.</p>
         <figure>
-          <img src="intercom-c8.jpg" alt="Intercom panel with C8 highlighted">
+          <img src="intercom.jpg" alt="Intercom panel with C8 highlighted">
           <figcaption>Intercom panel — press C8.</figcaption>
         </figure>
       </div>
@@ -97,7 +97,7 @@ app.get('/', (_req, res) => {
         <p>Walk straight across the corridor into the courtyard, then take the stairs on your <b>right</b> after the elevator.</p>
         <div class="note">The elevator is <b>strictly private</b> — please do not use it.</div>
         <figure>
-          <img src="hallway-courtyard.jpg" alt="Hallway leading to the courtyard and stairs">
+          <img src="45DDD98D-EC7E-4664-9205-F0D6D22C1BF4.jpeg" alt="Hallway leading to the courtyard and stairs">
           <figcaption>Go straight to the courtyard, then stairs on the right (after the elevator).</figcaption>
         </figure>
       </div>
